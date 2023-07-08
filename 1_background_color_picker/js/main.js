@@ -1,70 +1,34 @@
-const PURPLE = 'rgb(158, 77, 234)';
-const GREEN = 'rgb(151, 210, 151)';
-const BLUE = 'rgb(122, 122, 255)';
-const YELLOW = 'rgb(167, 153, 0)';
-const ORANGE = 'rgb(255, 176, 31)';
-const RED = 'rgb(255, 108, 108)';
+const colors = document.querySelectorAll('button');
+// console.log(colors[0].id)
 
+const changeColor = e => {
+    let colorId = e.target.id;
+    // console.log(colorId);
 
+    let color;
+    if (colorId === 'purple') {
+        color = 'rgb(158, 77, 234)';
 
-document.getElementById('purple').addEventListener('click', changeToPurple);
+    } else if(colorId === 'green') {
+        color = 'rgb(151, 210, 151)';
 
-document.getElementById('green').addEventListener('click', changeToGreen);
+    } else if(colorId === 'blue') {
+        color = 'rgb(122, 122, 255)';
 
-document.getElementById('blue').addEventListener('click', changeToBlue);
+    } else if(colorId === 'yellow'){
+        color = 'rgb(167, 153, 0)';
 
-document.getElementById('yellow').addEventListener('click', changeToYellow);
+    } else if(colorId === 'orange'){
+        color = 'rgb(255, 176, 31)';
 
-document.getElementById('orange').addEventListener('click', changeToOrange);
+    } else if(colorId === 'red'){
+        color = 'rgb(255, 108, 108)';
+    }
 
-document.getElementById('red').addEventListener('click', changeToRed);
-
-function changeToPurple() {
-    document.querySelector('body').style.backgroundColor = PURPLE;
-
-    document.querySelector('body').style.color = 'white';
-
-    document.querySelector('main').style.backgroundColor = 'white';
+    document.querySelector('body').style.backgroundColor = color;
+    document.querySelector('h1').style.color = 'white';
+    document.querySelector('ul').style.backgroundColor = 'white';
 }
 
-function changeToGreen() {
-    document.querySelector('body').style.backgroundColor = GREEN;
-
-    document.querySelector('body').style.color = 'white';
-
-    document.querySelector('main').style.backgroundColor = 'white';
-}
-
-function changeToBlue() {
-    document.querySelector('body').style.backgroundColor = BLUE;
-
-    document.querySelector('body').style.color = 'white';
-
-    document.querySelector('main').style.backgroundColor = 'white';
-}
-
-function changeToYellow() {
-    document.querySelector('body').style.backgroundColor = YELLOW;
-
-    document.querySelector('body').style.color ='white';
-
-    document.querySelector('main').style.backgroundColor = 'white';
-
-    document.querySelector('main').style.backgroundColor = 'white'
-}
-
-function changeToOrange() {
-    document.querySelector('body').style.backgroundColor = ORANGE;
-
-    document.querySelector('body').style.color = 'white';
-
-    document.querySelector('main').style.backgroundColor = 'white';
-}
-
-function changeToRed() {
-    document.querySelector('body').style.backgroundColor = RED;
-
-    document.querySelector('body').style.color = 'white';
-
-    document.querySelector('main').style.backgroundColor = 'white';
-}
+colors.forEach((element) => element.addEventListener('click', changeColor))
+;
