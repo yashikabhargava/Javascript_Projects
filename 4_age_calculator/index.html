@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Age Calculator</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<h1>AGE CALCULATOR</h1>
+		
+		<main id="main">
+			<section id="form">
+				<form>
+
+					<div>
+						<label for="Day">DAY</label>
+						<input type="text" id="day">
+					</div>
+					
+					<div>
+						<label for="month">MONTH</label>
+						<input type="text" id="month">
+					</div>
+
+					<div>
+						<label for="year">YEAR</label>
+						<input type="text" id="year">
+					</div>
+
+				</form>
+	
+				<button id="calculate">CALCULATE</button>
+			</section>
+
+			<section class ="hideAge unhideAge">
+               <span id="displayYear" class="displayAge"></span>
+			   <span id="displayMonth" class="displayAge"></span>
+			   <span id="displayDay" class="displayAge"></span>
+			</section>
+			
+		</main>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
