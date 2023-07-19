@@ -1,0 +1,110 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(192, 192, 192);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+h1{
+  width: fit-content;
+  font-weight: 400;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  letter-spacing: 0.2rem;
+  color: rgb(139, 67, 255);
+}
+
+main{
+  border-radius: 20px;
+  height: 30rem;
+  width: 40rem;
+  margin: auto;
+}
+
+#form{
+  height: 10rem;
+  width: 40rem;
+  display: flex;
+  border-radius: 20px;
+  background-color: white;
+}
+
+#form form{
+  width: 28rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#form form div{
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#form form label{
+  letter-spacing: 0.2rem;
+  font-weight: bolder;
+  color: rgb(74, 74, 74);
+}
+
+#form form input{
+  width: 7rem;
+  height: 3rem;
+  border-radius: 3px;
+  border-style:solid;
+  border-color: rgb(205, 205, 205);
+}
+
+#form button{
+  width: fit-content;
+  height: fit-content;
+  letter-spacing: 0.2rem;
+  margin: auto;
+  margin-top: 4.4rem;
+  padding: 0.93rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(156, 95, 255);
+}
+
+/* #DisplayAge{
+  background-color: rgb(218, 218, 218);
+} */
+
+.unhideAge{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.displayAge{
+  color: rgb(156, 95, 255);
+  font-size: 4rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
